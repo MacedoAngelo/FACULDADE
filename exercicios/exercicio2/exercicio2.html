@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex02</title>
+    <link rel="stylesheet" href="basico.css">
+    <style>
+        h1 {
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center;
+    font-size: 24pt;
+
+}
+
+body {
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+
+h4 {
+    color: blue;
+    font-size: 18pt;
+    margin-left: 30px;
+}
+
+p {
+    text-align: justify;
+    margin-left: 30px;
+    line-height: 25px;
+    text-indent: 30px;
+
+}
+
+h2 {
+    text-align: right;
+    text-decoration: underline;
+    
+    
+}
+
+h3 {
+    color: red;
+    margin-left: 30px;
+}
+    </style>
+
+
+
+
+</head>
+<body>
+    <h1> HTML 5: mocinho ou vil&atilde;o?
+        <img src="img/fundo.gif" alt="">
+    </h1>
+<h2>Autor: Raphael Monteiro</h2>
+                		
+                                
+<p>Às vezes é complicado aceitar novas metodologias se elas não
+trazem em si grandes mudanças no funcionamento ou na estrutura. Foi
+assim com a mudança do HTML para o XHTML. No início foi difícil, porque
+era só uma maneira correta de escrever e deixar o código mais leve.
+Porém, com o passar do tempo, vimos que ele trouxe muitos benefícios na
+produção de projetos web.</p>
+ 
+ 
+<p>Ao se passar para o XHTML surgiu
+também uma preocupação maior com o CSS. Sua estrutura, então, foi mais
+organizada, com as brigas acirradas para conseguir melhores resultados
+nos buscadores, qualquer ponto positivo estava fazendo a diferença.
+Então, com o passar do tempo, vimos uma migração muito grande por parte
+dos desenvolvedores, que agora estão mais preocupados com detalhes não
+somente funcionais como estruturais.</p>
+ 
+ 
+<h4>E o HTML 5?</h4>
+ 
+ 
+<p>O
+HTML 5 tem um objetivo muito funcional e com muitas interações que
+antes não eram possíveis. Eu vejo o HTML 5 como uma linguagem universal
+para a padronização da semântica. Com certeza ele não veio para
+atrapalhar, por mais que navegadores renomados ainda não disponham de
+suporte para tal linguagem (e sabemos o quão difícil é a migração de
+navegadores através dos usuários normais, exemplo migração do IE6 para
+o IE7) . Hoje existem possibilidades de fazer o código funcionar nos
+navegadores através de um arquivo .js.</p>
+ 
+ 
+<p>Antes de criticar, vamos conhecer as suas principais mudanças.</p>
+ 
+ 
+<p><strong>Elementos de estrutura</strong> </p>
+ 
+ 
+<ul><li>&lt;header&gt; - cabeçalho da página ou de uma seção (não confundir com a tag &lt;head&gt;);</li>
+ 
+<li>&lt;section&gt; - cada seção do conteúdo;</li>
+ 
+<li>&lt;article&gt; - um item do conteúdo dentro da página ou da seção;</li>
+ 
+<li>&lt;footer&gt; - o rodapé da página ou de uma seção;</li>
+ 
+<li>&lt;nav&gt;
+- o conjunto de links que formam a navegação, seja o menu principal do
+site ou links relacionados ao conteúdo da página;</li>
+ 
+<li>&lt;aside&gt; - conteúdo relacionado ao artigo (como arquivos e posts relacionados em um blog, por exemplo).</li>
+ 
+</ul>
+ 
+<p><strong>Elementos de conteúdo</strong> </p>
+ 
+ 
+<ul><li>&lt;figure&gt; - usado para associar uma legenda a uma imagem, vídeo, arquivo de áudio, objeto ou iframe:</li>
+ 
+</ul>
+ 
+<div class="codigo"><pre><code>    &lt;figure id="figura01"&gt;<br />      &lt;legend&gt;Figura 1. Esquema de uma página em HTML 5&lt;/legend&gt;<br />      &lt;img src="html5.png" alt="Estrutura do HTML 5" /&gt;<br />    &lt;/figure&gt;</code></pre></div>
+ 
+ 
+<ul><li>&lt;canvas&gt; - através de uma API gráfica, irá renderizar imagens 2D dinâmicas que poderão ser usadas em jogos, gráficos, etc;</li>
+ 
+<li>&lt;audio&gt;
+e &lt;video&gt; - usados para streaming (transmissão pela internet) de
+áudio e vídeo. É uma tentativa de criar um padrão em todos os
+navegadores como acontece hoje com as imagens:</li>
+ 
+</ul>
+ 
+<div class="codigo"><pre><code>    &lt;audio src="musica.mp3" autoplay="autoplay" loop="20000" /&gt; </code></pre></div>
+ 
+ 
+<div class="codigo"><pre><code>    &lt;video src="video.mov" width="400" height="360" /&gt; </code></pre></div>
+ 
+ 
+<ul><li>&lt;dialog&gt; - junto com as tags &lt;dt&gt; e &lt;dd&gt; será usado para formatar um diálogo:<br />&lt;meter&gt; - usada para representar medidas, que podem ser de distância, de armazenagem em disco, etc. </li>
+ 
+</ul>
+ 
+<h3><i>Conclusão</i></h3>
+ 
+ 
+<p><i>
+    A
+    maioria dos navegadores usados hoje em dia ainda não têm suporte a HTML
+    5, e nem todas as novas tags estão completamente definidas. Muitos
+    acham que ainda não é hora de gastar energia e tempo desenvolvendo um
+    site para os navegadores mais recentes para depois ter que "corrigir" o
+    código pensando nos navegadores antigos. Além disso, a própria W3C
+    admite que as especificações atuais ainda não são definitivas e podem
+    sofrer revisões.
+</i></p>
+ 
+ 
+<i>
+    <p>Por outro lado, algumas pessoas defendem que
+    toda tecnologia nova deve ser colocada em prática para evoluir,
+    encontrar erros e estabelecer melhorias. A resistência sempre vai
+    existir, como aconteceu com os padrões web, na migração do IE 6 para o
+    IE 7. Na minha opinião, temos sim que aprender a usar a nova tecnologia
+    e, o que não funciona, arrumar uma saída para corrigir, pois o HTML 5
+    veio para ficar assim como novos navegadores e novas API's.</p>
+</i>
+<p><i>
+    O
+    que eu deixo para vocês é que estamos passando por mudanças bruscas. É
+    melhor acompanhar as novas tendências para não ficarem para trás.
+</i></p>
+
+</body>
+</html>
